@@ -22,22 +22,14 @@ public void onEnable() {
   ```
   
 ###Example Usage
-```java
+``` java
 @EventHandler
 public void onPlayerTabCreateEvent(PlayerTabCreateEvent event) {
     PlayerTab playerTab = event.getPlayerTab();
 
-    playerTab.getByPosition(0, 0).text("&5Player Info:").send();
-    playerTab.getByPosition(0, 1).text("&eKills: 86").send();
-
-    playerTab.getByPosition(0, 3).text("&5Your Location:").send();
-    playerTab.getByPosition(0, 4).text("&7(300, -50)").send();
-
-    playerTab.getByPosition(2, 0).text("&5Kit:").send();
-    playerTab.getByPosition(2, 1).text("&eProt 2, Sharp 2").send();
-
-    playerTab.getByPosition(1, 0).text("&6&lKraken API").send();
+    playerTab.getByPosition(0, 0).text("Static Text").send();
 }
 ```
+
 ####Result
-![result](https://i.gyazo.com/bb380e0eeaa16a3e948d29166790d630.png)
+![result](https://i.gyazo.com/3ca29baf4bce8d9402885a954b7dbcd6.png)
